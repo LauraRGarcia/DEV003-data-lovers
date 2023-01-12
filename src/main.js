@@ -51,6 +51,25 @@ function MoviesSortUp(){
 
 /*Miyazaki.forEach(function(film){
 console.log(film.title +' '+ film.director + ' ' + film.release_date)});
+
+Takahata.forEach(function(film){
+  console.log(film.title +' '+ film.director + ' ' + film.release_date)});
+
+//se ejecuta la funcion con el change en el orderYear, evento desde el DOM
+sortSelectUp.addEventListener('click', MoviesSortUp)
+function MoviesSortUp(){
+  let sortRelease = sortSelectUp.value;
+  let moviesSorted;
+  //moviesSorted va a ser la funcion de sort, tomando la data y el value del id
+  moviesSorted=sortMovies(dataMovies, sortRelease);
+  printMovies(MoviesSortUp);
+} 
+
+//  for each o llamado individual
+//printMovies(nombreFuncion)
+
+/*Miyazaki.forEach(function(film){
+console.log(film.title +' '+ film.director + ' ' + film.release_date)});
 Takahata.forEach(function(film){
   console.log(film.title +' '+ film.director + ' ' + film.release_date)});
 /*
