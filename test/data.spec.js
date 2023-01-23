@@ -1,4 +1,5 @@
 import { filterDirector, sortMovies} from '../src/data.js';
+import { filterDirector, sortMovies } from '../src/data.js';
 //
 const testMovie = [
   {
@@ -17,7 +18,7 @@ const testMovie = [
     "release_date": "2002",
   }
 ]
-//Isao Takahata
+//pendiente de test!
 describe('filterDirector', () => {
   it('is a function', () => {
     expect(typeof filterDirector).toBe('function');
@@ -28,15 +29,50 @@ describe('filterDirector', () => {
   });
 });
 
-//crear data para testeo
-/*
-describe('anotherExample', () => {
+describe('sortMovies', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof sortMovies).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('debe ordenar realease date descendente', () => {
+    expect(sortMovies(testMovie, 'downward')).toEqual([
+      {
+        "title": "The Secret World of Arrietty",
+        "director": "Hiromasa Yonebayashi",
+        "release_date": "2010",
+      },
+
+      {
+        "title": "The Cat Returns",
+        "director": "Hiroyuki Morita",
+        "release_date": "2002",
+      },
+      {
+        "title": "Castle in the Sky",
+        "director": "Hayao Miyazaki",
+        "release_date": "1986",
+      }
+    ]);
   });
-});
-*/
+  it('debe ordenar realease date ascendente', () => {
+    expect(sortMovies(testMovie, 'upward')).toEqual([
+      {
+        "title": "Castle in the Sky",
+        "director": "Hayao Miyazaki",
+        "release_date": "1986",
+      },
+      {
+        "title": "The Cat Returns",
+        "director": "Hiroyuki Morita",
+        "release_date": "2002",
+      },
+      {
+        "title": "The Secret World of Arrietty",
+        "director": "Hiromasa Yonebayashi",
+        "release_date": "2010",
+      }
+    ])
+  });
+})
+
+//crear data para testeo
