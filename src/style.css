@@ -41,7 +41,7 @@ background-color:  rgb(42, 92, 99);
 
 }
 a{
-    text-decoration: none;
+text-decoration: none;
 }
 /* mobile responsive */
 @media (max-width:500px){
