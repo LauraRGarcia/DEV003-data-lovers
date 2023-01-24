@@ -1,6 +1,6 @@
 import { filterDirector} from '../src/data.js';
 //
-const testMovie = [ 
+const testMovie = [
   {
     "title": "Castle in the Sky",
     "director": "Hayao Miyazaki",
@@ -14,7 +14,7 @@ const testMovie = [
   {
     "title": "The Cat Returns",
     "director": "Hiroyuki Morita",
-    "release_date": "2002", 
+    "release_date": "2002",
   }
 ]
 //Isao Takahata
