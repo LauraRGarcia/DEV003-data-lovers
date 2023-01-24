@@ -1,6 +1,6 @@
 //import ghibli from './data/ghibli/ghibli.js'
 import data from './data/ghibli/ghibli.js'
-import { sortMovies, filterDirector, sortName } from './data.js'
+import { sortMovies, filterDirector, sortName,dataMovies } from './data.js'
 //console.log(data)
 
 const dataMovies = data.films;

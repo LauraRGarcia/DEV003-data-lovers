@@ -3,7 +3,7 @@ import data from './data/ghibli/ghibli.js'
 const dataMovies = data.films;
 
 //funcion para ordenar años de lanzamiento asc. Toma los valores del elemento, los compar y devuelve la comparación
-export default (opUp, opDown) => {
+export const sortMovie = (opUp, opDown) => {
   //comparar elementos del objeto.
   const compareElement = (a, b) => {
     //esta comparando release date, si a es mayor que b, para determinar el orden
