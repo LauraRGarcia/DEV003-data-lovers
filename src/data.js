@@ -1,6 +1,6 @@
 import data from './data/ghibli/ghibli.js'
 //funcion que devuelve data a main
-const dataMovies = data.films;
+export const dataMovies = data.films;
 
 //funcion para ordenar años de lanzamiento asc. Toma los valores del elemento, los compara y devuelve la comparación
 export const sortMovies = (opUp, opDown) => {
