@@ -1,6 +1,6 @@
 //import ghibli from './data/ghibli/ghibli.js'
 import data from './data/ghibli/ghibli.js'
-import { sortMovies, filterDirector, sortName,dataMovies } from './data.js'
+import { sortMovies, filterDirector, sortName } from './data.js'
 //console.log(data)
 
 const dataMovies = data.films;
@@ -13,7 +13,7 @@ const sortSelectName=document.getElementById("orderNameMovies");
 //declaramos funcion para mostrar la data de las peliculas mediante un innerHTML, se pasa de funcio global a  cada parametro asignado movie
 // para poder reflejar el filtro
 function printMovies(movies){
-  let printHtml = '';
+  let printHtml = ''; 
   //tomamos cada dato del array con un forEach, recorre todo el array y retorna los datos que elegimos más abajo
   movies.forEach(function(singleMovie)
   {
@@ -21,16 +21,16 @@ function printMovies(movies){
   //html += not an addition, but a full overwrite.  printHtml = printHtml+
     printHtml +=
     `
-      <div class="caja">
+      <div class="caja">  
         <div class="card-container">
       <img class="poster-Image" src="${singleMovie.poster}"/>
       <p class="title-card">Title: ${singleMovie.title}</p>
       <p class="text-card">Director: ${singleMovie.director}</p>
       <p class="text-card">Producer: ${singleMovie.producer}</p>
       <p class="text-card">Release date: ${singleMovie.release_date}</p>
-
-    </div>
-
+     
+       </div>
+      
       </div>
   `;
     //we now say let the inside of that div take in our htmlCode variable that holds our html codes.*/
