@@ -17,7 +17,7 @@ const testMovie = [
     "release_date": "2002",
   }
 ]
-//test de filtrar por director
+//pendiente de test!
 describe('filterDirector', () => {
   it('is a function', () => {
     expect(typeof filterDirector).toBe('function');
